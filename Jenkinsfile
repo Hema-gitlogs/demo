@@ -19,7 +19,7 @@ pipeline
        steps
         {
        sh 'pwd'
-       dir('SpringMVCSecurityXML') 
+       dir('main') 
        {
             // some block
             sh 'pwd'
@@ -33,10 +33,10 @@ pipeline
     {
         steps
         {
-        dir('SpringMVCSecurityXML/target') 
+        dir('main') 
        {
             // some block
-            sh 'sudo cp SpringMVCSecurityXML.war /var/lib/tomcat8/webapps'
+            sh 'sudo cp main.war /var/lib/tomcat9/webapps'
        }
         }
     }*/
