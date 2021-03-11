@@ -8,11 +8,11 @@ pipeline
         label 'master'
     }*/
     
-   /* stage('Pull')
+    stage('Pull')
     {
-       git 'https://github.com/AMRUTHASALIKE/JavaSample.git'
-    }*/
-    stages
+       git 'https://github.com/Hema-logs/demo.git'
+    }
+   /* stages
     {
     stage('Build')
     {
@@ -39,6 +39,6 @@ pipeline
             sh 'sudo cp SpringMVCSecurityXML.war /var/lib/tomcat8/webapps'
        }
         }
+    }*/
     }
-    }
-    }
+    
