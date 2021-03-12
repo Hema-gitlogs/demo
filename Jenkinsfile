@@ -16,14 +16,17 @@ pipeline
   
     stage('Build')
     {
+       steps
+       {
             sh 'mvn clean install'
-       
+       }
     }
     stage('Deploy')
     {
         steps
         {
-            sh 'sudo cp target/*.war /var/lib/tomcat9/webapps'
+           sh 'mv target/*.war javademoex.war 
+           sh 'sudo cp  javademoex.war /var/lib/tomcat9/webapps'
         }
     }
     }
