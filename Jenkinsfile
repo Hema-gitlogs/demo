@@ -9,11 +9,6 @@ pipeline
     }*/
     stages
     {
-    stage('Pull')
-    {
-       git 'https://github.com/Hema-logs/demo.git'
-    }
-  
     stage('Build')
     {
        steps
